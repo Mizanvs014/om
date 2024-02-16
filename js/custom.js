@@ -31,12 +31,24 @@ $(document).ready(function(){
 	});
 	
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 400) {
-            $("#navigation").css("background-color","#000"); //Color nav bar
+        // Obtener la parte de la URL después del nombre de dominio
+        var path = window.location.pathname;
+    
+        if (path.includes("/politica-de-privacidad.html") || path.includes("/terminos-y-condiciones.html") || $(window).scrollTop() > 400) {
+            $("#navigation").css("background-color", "#000");
         } else {
-            $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
+            $("#navigation").css("background-color", "rgba(16, 22, 54, 0.2)");
         }
     });
+
+    
+    // $(window).scroll(function () {
+    //     if ($(window).scrollTop() > 400) {
+    //         $("#navigation").css("background-color","#000"); //Color nav bar
+    //     } else {
+    //         $("#navigation").css("background-color","rgba(16, 22, 54, 0.2)");
+    //     }
+    // });
 	
 	/* ========================================================================= */
 	/*	Fix Slider Height
