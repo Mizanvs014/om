@@ -23,7 +23,7 @@ figure, p {
 }
 
 a {
-    color: #A8ce46;
+    color: #fff;
 	
     -webkit-transition: all .3s ease-in 0s;
        -moz-transition: all .3s ease-in 0s;
@@ -154,7 +154,7 @@ body > section,
 }
 
 .navbar-toggle i {
-	color: #A8ce46;
+	color: #fff;
 }
 
 .navbar-brand {
